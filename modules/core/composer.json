@@ -1,0 +1,29 @@
+{
+    "name": "core",
+    "type": "prject",
+    "description": "core module of this app",
+    "keywords": [
+        "core"
+    ],
+    "license": "None",
+    "authors": [
+        {
+            "name": "Alireza",
+            "role": "Developer,Onwer"
+        }
+    ],
+    "autoload": {
+        "Modules\\Core\\": "./src"
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Barryvdh\\Debugbar\\Facade"
+            }
+        }
+    },
+}
